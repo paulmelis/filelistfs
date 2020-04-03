@@ -1,7 +1,7 @@
 # FileListFS - A FUSE file system for browsing lists of files
 
 I needed to go through long lists of file paths, basically the contents
-of a backup dumped a list of files and directories. So something in this form:
+of a backup dumped as a list of files and directories. So something in this form:
 
 ```
 /
@@ -14,10 +14,10 @@ of a backup dumped a list of files and directories. So something in this form:
 /usr/bin/file
 ```
 
-As scanning the original file list was did not really help in getting an overview
+As scanning the original file lists did not really help in getting an overview
 of the backups I created a very simple FUSE-based file system that presents
-the contents of a list file as a regular file system. This you can then browse
-in a file manager as you usually do.
+the contents of a single list file as a regular file system. This you can then 
+browse in a file manager as you usually do.
 
 ## Usage
 
