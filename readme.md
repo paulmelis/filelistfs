@@ -59,6 +59,13 @@ As the files I used did not contain file size information as file sizes reported
 use the same value of 12345 bytes. Similarly, no useful information on file
 and directory permissions is provided in the FUSE-mounted file system.
 
+Furthermore, an entry in the list is considered a file until there is another
+entry that uses it as a parent directory. Example: the first time `/usr` is 
+encountered it is flagged as a file, but when subsequently `/usr/bin` is found
+`/usr` is flagged as a directory. So any directory in the list that does not
+contain any files further down in the list will be presented as a file in the
+FUSE file system.
+
 Obviously, file *content* is not available, nor can you makes changes to the
 mounted file system in any way. Although being able to delete files could be
 a useful option, when cleaning up a list of files to keep only the ones of
