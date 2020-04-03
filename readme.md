@@ -66,5 +66,5 @@ interest. However, this isn't implemented.
 
 * Python 3.x
 * [python-fuse](https://github.com/libfuse/python-fuse)
-* [py-lmdb](https://github.com/jnwatson/py-lmdb) (for `fill2.py and `filelistfs2.py`)
-* [redis-py](https://github.com/andymccurdy/redis-py) (for `fill.py and `filelistfs.py`)
+* [py-lmdb](https://github.com/jnwatson/py-lmdb) (for `fill2.py` and `filelistfs2.py`)
+* [redis-py](https://github.com/andymccurdy/redis-py) (for `fill.py` and `filelistfs.py`)
