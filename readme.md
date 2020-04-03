@@ -15,8 +15,8 @@ of a backup dumped as a list of files and directories. So something in this form
 ```
 
 As scanning the original file lists did not really help in getting an overview
-of the backups I created a very simple FUSE-based file system that presents
-the contents of a single list file as a regular file system. This you can then 
+of the backups I created a very simple [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace)-based 
+file system that presents the contents of a single list file as a regular file system. This you can then 
 browse in a file manager as you usually do.
 
 ## Usage
