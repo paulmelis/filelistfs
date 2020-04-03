@@ -51,7 +51,9 @@ as large. The LMDB database size is usually similar to the original file list
 size, or somewhat smaller, so it's not really an issue.
 
 The fill scripts handle some ugly path details, like replacing a starting `//`
-with a single `/`. 
+with a single `/`. LMDB by default has a maximum key length of 512 bytes, which
+you can only change by recompiling it. So the import script ignores all paths
+that are too long.
 
 As the files I used did not contain file size information as file sizes reported
 use the same value of 12345 bytes. Similarly, no useful information on file
